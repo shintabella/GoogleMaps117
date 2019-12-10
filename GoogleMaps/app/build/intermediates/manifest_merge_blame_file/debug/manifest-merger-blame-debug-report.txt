@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.googlemaps"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="19"
+9-->F:\GoogleMaps\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->F:\GoogleMaps\app\src\main\AndroidManifest.xml
+11
+12    <!--
+13         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+14         Google Maps Android API v2, but you must specify either coarse or fine
+15         location permissions for the 'MyLocation' functionality.
+16    -->
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:11:5-78
+17-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:11:22-76
+18
+19    <dist:module dist:instant="true" />
+19-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:13:5-39
+19-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:13:18-37
+20
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:24:22-64
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+28
+29    <application
+29-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:15:5-44:19
+30        android:allowBackup="true"
+30-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:16:13-39
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\419c1e4c69cc84d0a9af6aedb8b39477\core-1.1.0\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@mipmap/ic_launcher"
+33-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:17:13-47
+34        android:label="@string/app_name"
+34-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:18:13-45
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:19:13-58
+36        android:supportsRtl="true"
+36-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:20:13-39
+37        android:testOnly="true"
+38        android:theme="@style/AppTheme" >
+38-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:21:13-44
+39
+40        <!--
+41             The API key for Google Maps-based APIs is defined as a string resource.
+42             (See the file "res/values/google_maps_api.xml").
+43             Note that the API key is linked to the encryption key used to sign the APK.
+44             You need a different API key for each encryption key, including the release key that is used to
+45             sign the APK for publishing.
+46             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+47        -->
+48        <meta-data
+48-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:31:9-33:58
+49            android:name="com.google.android.geo.API_KEY"
+49-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:32:17-62
+50            android:value="@string/google_maps_key" />
+50-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:33:17-56
+51
+52        <activity
+52-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:35:9-43:20
+53            android:name="com.example.googlemaps.MapsActivity"
+53-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:36:17-45
+54            android:label="@string/title_activity_maps" >
+54-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:37:17-60
+55            <intent-filter>
+55-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:38:13-42:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:39:17-68
+56-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:39:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:41:17-76
+58-->F:\GoogleMaps\app\src\main\AndroidManifest.xml:41:27-74
+59            </intent-filter>
+60        </activity>
+61        <!-- Needs to be explicitly declared on P+ -->
+62        <uses-library
+62-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+63            android:name="org.apache.http.legacy"
+63-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+64            android:required="false" />
+64-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\293034f2d2a09f99c3db3633ead8a70f\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+65
+66        <activity
+66-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\69f96a19f5b64487840d63c90ad74fcb\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+67            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+67-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\69f96a19f5b64487840d63c90ad74fcb\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+68            android:exported="false"
+68-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\69f96a19f5b64487840d63c90ad74fcb\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+69-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\69f96a19f5b64487840d63c90ad74fcb\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+70
+71        <meta-data
+71-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\38ce1ce95d275f09d6606b332c7fd7fe\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+72            android:name="com.google.android.gms.version"
+72-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\38ce1ce95d275f09d6606b332c7fd7fe\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+73            android:value="@integer/google_play_services_version" />
+73-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\38ce1ce95d275f09d6606b332c7fd7fe\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+74    </application>
+75
+76</manifest>
